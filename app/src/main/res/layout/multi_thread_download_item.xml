@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/id_img_file_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/id_text_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/id_img_file_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="文件名"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/id_text_finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="3分钟前"
+        android:textColor="#99000000" />
+
+    <ProgressBar
+        android:id="@+id/id_pb_file_download"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_img_file_icon"
+        android:singleLine="true"
+        android:text="内容标题"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/id_btn_download_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_pb_file_download"
+        android:layout_toLeftOf="@+id/id_btn_download_pause"
+        android:layout_toStartOf="@+id/id_btn_download_pause"
+        android:text="下载"/>
+
+    <Button
+        android:id="@+id/id_btn_download_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/id_pb_file_download"
+        android:text="暂停"/>
+
+
+</RelativeLayout>
